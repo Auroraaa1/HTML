@@ -1,0 +1,41 @@
+/* Define colors and fonts for consistent, clean styling */
+:root {
+    --color-background: #fdfcf9; /* Creamy Off-white */
+    --color-text: #333333;
+    --color-teal-primary: #047878; /* A darker, consistent teal */
+}
+
+body {
+    /* Add smooth scrolling behavior for all internal links */
+    scroll-behavior: smooth; 
+    font-family: 'Lato', sans-serif;
+    color: var(--color-text); 
+    background-color: var(--color-background);
+}
+
+/* Base Styles for Typography from Merriweather/Lato imports */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Ensure padding accounts for the fixed header */
+.section-content {
+    padding-top: 6rem; /* Adjusting padding for fixed header clearance */
+    padding-bottom: 4rem;
+}
+
+/* Custom subtle background texture */
+.textured-bg {
+    background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px);
+    background-size: 15px 15px; 
+}
+
+/* Styling for clickable gallery cards */
+.gallery-card:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Extra shadow lift */
+}
+
+/* Additional utility classes (If you want to move some Tailwind-like styles over) */
+/* The current HTML relies heavily on Tailwind utility classes, 
+   which is why most styles remain there. This structure only moves the custom <style> block. */

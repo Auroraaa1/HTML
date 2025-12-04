@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇵🇭 Island Gallery - PH Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Style.css"> 
+
+    <script>
+        /**
+         * Opens a new tab with a Google search for the specified island's travel guide.
+         * @param {string} islandName The name of the island to search for.
+         */
+        function openIslandSearch(islandName) {
+            window.open(`https://www.google.com/search?q=Travel+Guide+${islandName}+Philippines`, '_blank');
+        }
+    </script>
+</head>
+<body class="textured-bg">
+    
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-xl z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-teal-600 tracking-wider">
+                <a href="Main Page.html#home" class="hover:text-teal-700 transition duration-300">🇵🇭 PH Explorer</a>
+            </h1>
+            <ul class="flex space-x-8 text-gray-700 font-bold">
+                <li><a href="Main Page.html#home" class="hover:text-teal-500 transition duration-300">Home</a></li>
+                <li><a href="#gallery" class="text-teal-500">Island Gallery</a></li>
+                <li><a href="about-us.html" class="hover:text-teal-500 transition duration-300">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery" class="section-content px-4 py-16">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-black text-center mb-6 text-teal-700">The Ultimate Island Hopping Collection</h1>
+            <h5 class="text-xl text-center max-w-4xl mx-auto mb-12 text-gray-600">
+                From epic surf breaks to breathtaking historical sites—start checking off your Philippine bucket list. Click any card for a detailed search! 
+                <a href="#quick-table" class="text-teal-500 hover:text-teal-700 underline font-semibold transition duration-300 ml-2">Need a summary? See our Quick Guide Table below.</a>
+            </h5>
+
+            <div class="text-center mb-10">
+                <a href="Main Page.html#featured-destinations" class="text-lg px-4 py-2 border-2 border-teal-500 text-teal-700 font-bold rounded-full hover:bg-teal-100 transition duration-300">
+                    ← Back to Featured Destinations
+                </a>
+            </div>
+
+            <div id="quick-table" class="mb-12 overflow-x-auto bg-white p-6 rounded-xl shadow-lg border-l-4 border-teal-500">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4">Quick Destinations Guide (Table)</h3>
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-teal-500 text-white">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Destination</th>
+                            <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Region</th>
+                            <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Must-See Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap"><h6 class="text-base font-semibold text-teal-800">Siargao</h6></td>
+                            <td class="px-6 py-4 whitespace-nowrap">Mindanao</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Surfing, Lagoons, Beaches</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap"><h6 class="text-base font-semibold text-teal-800">Coron</h6></td>
+                            <td class="px-6 py-4 whitespace-nowrap">Palawan</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Wreck Diving, Kayangan Lake</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap"><h6 class="text-base font-semibold text-teal-800">Vigan</h6></td>
+                            <td class="px-6 py-4 whitespace-nowrap">Ilocos Region</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Spanish Colonial Heritage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div id="siargao-card" onclick="openIslandSearch('Siargao Island')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-green-600">
+                    <img src="https://placehold.co/400x300/10b981/ffffff?text=Siargao" onerror="this.src='https://placehold.co/400x300/10b981/ffffff?text=Siargao+Surfing';" alt="Cloud 9 Surfing in Siargao" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-green-700">Siargao Island</h3>
+                    <p class="text-sm text-gray-600">Siargao, the surfing capital of the Philippines, is famous for the powerful Cloud 9 wave. Beyond the barrels, explore the tidal flat pools of Magpupungko, kayak through the lush mangroves, and relax in the serene, turquoise waters of Sugba Lagoon.</p>
+                </div>
+                
+                <div id="boracay-activities" onclick="openIslandSearch('Boracay Island')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-amber-600">
+                    <img src="https://placehold.co/400x300/f59e0b/ffffff?text=Boracay" onerror="this.src='https://placehold.co/400x300/f59e0b/ffffff?text=Boracay+White+Beach';" alt="White Beach in Boracay" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-amber-700">Boracay Island Activities</h3>
+                    <p class="text-sm text-gray-600">Experience the best of tropical luxury with a variety of activities including scuba diving, snorkeling trips, and sunset paraw sailing. D'Mall offers dining and shopping, culminating in vibrant beachside nightlife, making it the country's party hub.</p>
+                </div>
+                
+                <div onclick="openIslandSearch('Banaue Rice Terraces')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-orange-600">
+                    <img src="https://placehold.co/400x300/f97316/ffffff?text=Banaue" onerror="this.src='https://placehold.co/400x300/f97316/ffffff?text=Banaue+Rice+Terraces';" alt="Banaue Rice Terraces" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-orange-700">Banaue Rice Terraces</h3>
+                    <p class="text-sm text-gray-600">Often called the "Eighth Wonder of the World," the Banaue Rice Terraces were hand-carved into the mountains of Ifugao over 2,000 years ago. These breathtaking terraces, still used for planting rice and vegetables, showcase the resilience and ingenuity of the indigenous Ifugao people.</p>
+                </div>
+                
+                <div onclick="openIslandSearch('Vigan City')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-violet-600">
+                    <img src="https://placehold.co/400x300/4c1d95/ffffff?text=Vigan" onerror="this.src='https://placehold.co/400x300/4c1d95/ffffff?text=Vigan+Calle+Crisologo';" alt="Calle Crisologo in Vigan" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-violet-700">Vigan City</h3>
+                    <p class="text-sm text-gray-600">Vigan is a UNESCO World Heritage Site and one of the few Spanish colonial towns left in the Philippines. Take a horse-drawn carriage ride (kalesa) along the beautifully preserved cobblestone street of Calle Crisologo and savor authentic Ilocano cuisine and local historical marvels.</p>
+                </div>
+                
+                <div onclick="openIslandSearch('Mayon Volcano')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-red-600">
+                    <img src="https://placehold.co/400x300/ef4444/ffffff?text=Mayon" onerror="this.src='https://placehold.co/400x300/ef4444/ffffff?text=Mayon+Volcano';" alt="Mayon Volcano" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-red-700">Mayon Volcano</h3>
+                    <p class="text-sm text-gray-600">Mayon Volcano, known for its perfect cone shape, is an active stratovolcano and a stunning landmark of the Bicol Region. Its surrounding landscape is ideal for hiking, ATV adventures across the lava trails, and viewing ancient ruins like the Cagsawa Bell Tower, which was partially submerged by a previous eruption.</p>
+                </div>
+                
+                <div onclick="openIslandSearch('Cebu Moalboal')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-gray-600">
+                    <img src="https://placehold.co/400x300/6b7280/ffffff?text=Cebu+Moalboal" onerror="this.src='https://placehold.co/400x300/6b7280/ffffff?text=Cebu+Sardine+Run';" alt="Sardine Run in Moalboal, Cebu" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-700">Cebu & Moalboal</h3>
+                    <p class="text-sm text-gray-600">Cebu offers both city vibrancy and incredible natural experiences. Head to Moalboal for the incredible Sardine Run, where millions of sardines swim just offshore. For adrenaline seekers, canyoneering through the turquoise waters of the majestic Kawasan Falls is a must-do experience.</p>
+                </div>
+                
+                <div id="coron-info" onclick="openIslandSearch('Coron Palawan')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-blue-600">
+                    <img src="https://placehold.co/400x300/2563eb/ffffff?text=Coron" onerror="this.src='https://placehold.co/400x300/2563eb/ffffff?text=Coron+Lake';" alt="Kayangan Lake, Coron" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-blue-700">Coron, Palawan</h3>
+                    <p class="text-sm text-gray-600">Coron is famous for its dramatic limestone cliffs, seven stunning freshwater lakes, and world-class diving sites featuring Japanese shipwrecks from WWII. Key destinations include Kayangan Lake (often cited as the cleanest lake in Asia) and Barracuda Lake, both offering unique and breathtaking snorkeling opportunities.</p>
+                </div>
+                
+                <div onclick="openIslandSearch('Batanes Island')" class="gallery-card bg-white rounded-xl shadow-xl p-4 transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-purple-600">
+                    <img src="https://placehold.co/400x300/6d28d9/ffffff?text=Batanes" onerror="this.src='https://placehold.co/400x300/6d28d9/ffffff?text=Batanes+Rolling+Hills';" alt="Rolling Hills of Batanes" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-purple-700">Batanes: Northern Charm</h3>
+                    <p class="text-sm text-gray-600">Batanes is characterized by its dramatic seascapes, rolling hills, and unique Ivatan stone houses built to withstand strong winds and typhoons. Explore the traditional villages, watch the sunrise over the Pacific, and experience a unique, isolated culture in the northernmost frontier of the Philippines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white p-6 text-center shadow-inner">
+        <div class="container mx-auto">
+            <p>&copy; 2025 PH Explorer. Created with passion for travel. | 
+                <a href="Main Page.html" class="underline text-teal-400 hover:text-teal-300 transition duration-300">Back to Home</a> |
+                <a href="about-us.html" class="underline text-teal-400 hover:text-teal-300 transition duration-300 ml-4">View About Us</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
