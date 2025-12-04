@@ -5,70 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - PH Explorer</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Style.css"> 
 </head>
 <body class="textured-bg">
 
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-xl z-50">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-extrabold text-teal-600 tracking-wider">
-                <a href="Main Page.html#home" class="hover:text-teal-700 transition duration-300">🇵🇭 PH Explorer</a>
+    <header class="main-header">
+        <nav class="nav-container">
+            <h1>
+                <a href="Main Page.html#home" class="logo-link">🇵🇭 PH Explorer</a>
             </h1>
-            <ul class="flex space-x-8 text-gray-700 font-bold">
-                <li><a href="Main Page.html#home" class="hover:text-teal-500 transition duration-300">Home</a></li>
-                <li><a href="island-gallery.html" class="hover:text-teal-500 transition duration-300">Island Gallery</a></li> 
-                <li><a href="#about" class="text-teal-500">About Us</a></li>
+            <ul class="nav-list">
+                <li><a href="Main Page.html#home">Home</a></li>
+                <li><a href="island-gallery.html">Island Gallery</a></li> 
+                <li><a href="#about" class="active-link">About Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about" class="section-content px-4 py-16">
-        <div class="container mx-auto max-w-4xl bg-white p-10 rounded-2xl shadow-2xl border-t-8 border-teal-500">
-            <h1 class="text-5xl font-black text-center mb-8 text-teal-700">Explore Responsibly, Travel Deeply</h1>
+    <section id="about" class="section-content">
+        <div class="about-box">
+            <h1>Explore Responsibly, Travel Deeply</h1>
 
-            <div class="mb-10">
-                <h2 class="text-3xl font-semibold text-gray-700 border-b border-gray-300 pb-3 mb-4">Our Mission</h2>
-                <p class="text-lg text-gray-600 mb-4">
+            <div class="mb-10 about-mission">
+                <h2>Our Mission</h2>
+                <p>
                     This website serves as a digital guide, highlighting the stunning beauty and rich cultural heritage of the Philippines. We champion sustainable and respectful travel, encouraging explorers to immerse themselves in the local culture while prioritizing the preservation of these natural wonders for future generations.
                 </p>
-                <p class="text-lg text-gray-600">
+                <p class="mt-4">
                     Find more information, including visa requirements and official government advisories, directly in the 
-                    <a href="#official-resources" class="text-blue-600 hover:text-blue-800 underline font-semibold transition duration-300">Official Travel Resources section</a>.
+                    <a href="#official-resources" class="text-link">Official Travel Resources section</a>.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-10 mb-8">
-                <div>
-                    <h3 id="travel-tips" class="text-2xl font-semibold text-gray-700 border-b border-gray-300 pb-3 mb-4">Essential Travel Tips (Ordered List)</h3>
-                    <ol class="list-decimal list-outside space-y-3 text-gray-600 pl-6 text-base">
-                        <li>**Respect the Environment:** Always follow local eco-tourism rules, especially regarding waste and marine life interaction.</li>
-                        <li>**Carry Local Currency:** While major resorts accept cards, smaller islands and local markets operate on cash (Philippine Peso).</li>
-                        <li>**Learn Local Phrases:** A simple "Salamat" (Thank you) or "Magandang Umaga" (Good morning) is greatly appreciated.</li>
-                        <li>**Safety First:** Check local advisories and travel insurance before exploring remote areas.</li>
-                        <li>**Hydrate:** It's a tropical climate! Drink plenty of water and use sun protection diligently.</li>
+            <div class="about-grid mb-8">
+                <div class="about-list">
+                    <h3 id="travel-tips">Essential Travel Tips (Ordered List)</h3>
+                    <ol class="list-text">
+                        <li class="list-item-ol">**Respect the Environment:** Always follow local eco-tourism rules, especially regarding waste and marine life interaction.</li>
+                        <li class="list-item-ol">**Carry Local Currency:** While major resorts accept cards, smaller islands and local markets operate on cash (Philippine Peso).</li>
+                        <li class="list-item-ol">**Learn Local Phrases:** A simple "Salamat" (Thank you) or "Magandang Umaga" (Good morning) is greatly appreciated.</li>
+                        <li class="list-item-ol">**Safety First:** Check local advisories and travel insurance before exploring remote areas.</li>
+                        <li class="list-item-ol">**Hydrate:** It's a tropical climate! Drink plenty of water and use sun protection diligently.</li>
                     </ol>
                 </div>
 
-                <div>
-                    <h4 class="text-2xl font-semibold text-gray-700 border-b border-gray-300 pb-3 mb-4">Quick Facts & Contact</h4>
-                    <ul class="list-disc list-outside space-y-3 text-gray-600 pl-6 text-base">
-                        <li>**Capital:** Manila (National Capital Region)</li>
-                        <li>**National Language:** Filipino (Tagalog)</li>
-                        <li>**Time Zone:** UTC+8</li>
-                        <li>**Email:** <a href="mailto:info@phtravel.com" class="text-teal-500 hover:underline">info@phtravel.com</a> (For collaboration)</li>
-                        <li>**Phone:** +63 917 XXX XXXX (Emergencies only)</li>
+                <div class="about-list">
+                    <h4>Quick Facts & Contact</h4>
+                    <ul class="list-text">
+                        <li class="list-item-ul">**Capital:** Manila (National Capital Region)</li>
+                        <li class="list-item-ul">**National Language:** Filipino (Tagalog)</li>
+                        <li class="list-item-ul">**Time Zone:** UTC+8</li>
+                        <li class="list-item-ul">**Email:** <a href="mailto:info@phtravel.com" class="text-link">info@phtravel.com</a> (For collaboration)</li>
+                        <li class="list-item-ul">**Phone:** +63 917 XXX XXXX (Emergencies only)</li>
                     </ul>
                 </div>
             </div>
 
-            <div id="official-resources" class="mt-10 pt-8 border-t border-gray-200">
+            <div id="official-resources" class="mt-10 pt-8 border-t border-gray-200 resource-links">
                 <h6 class="text-2xl font-semibold text-teal-700 mb-4">Official Travel Resources</h6>
-                <p class="text-gray-600 space-x-6">
-                    <a href="https://www.google.com/search?q=Official+Philippine+Tourism+Website" target="_blank" class="text-white bg-red-600 hover:bg-red-700 px-5 py-3 rounded-lg transition duration-300 shadow-lg inline-block font-bold">
+                <p> 
+                    <a href="https://www.google.com/search?q=Official+Philippine+Tourism+Website" target="_blank" class="btn-red">
                         Official PH Tourism Site
                     </a>
-                    <a href="https://www.google.com/search?q=UNESCO+World+Heritage+Philippines" target="_blank" class="text-white bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg transition duration-300 shadow-lg inline-block font-bold">
+                    <a href="https://www.google.com/search?q=UNESCO+World+Heritage+Philippines" target="_blank" class="btn-blue">
                         UNESCO Heritage Sites
                     </a>
                 </p>
@@ -76,11 +75,11 @@
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white p-6 text-center shadow-inner">
-        <div class="container mx-auto">
+    <footer class="main-footer">
+        <div class="nav-container">
             <p>&copy; 2025 PH Explorer. Created with passion for travel. | 
-                <a href="Main Page.html" class="underline text-teal-400 hover:text-teal-300 transition duration-300">Back to Home</a> |
-                <a href="#about" class="underline text-teal-400 hover:text-teal-300 transition duration-300 ml-4">Back to Top</a>
+                <a href="Main Page.html" class="footer-link">Back to Home</a> |
+                <a href="#about" class="footer-link ml-4">Back to Top</a>
             </p>
         </div>
     </footer>
