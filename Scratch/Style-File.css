@@ -1,0 +1,173 @@
+#font color/style/formatting
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 3;
+    background: rgb(21, 94, 18);
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mainheader {
+    background: url("Palawan-Main.png") no-repeat center center / cover;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.content {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: rgb(21, 94, 18);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.mainheader h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Formatting the Food section */
+main {
+    padding: 40px; 
+    margin: 20px auto; 
+    max-width: 1600px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#foodh2 {
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.introduction {
+    background-color: #44633F;   
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+#introduction h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#introduction p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.foods-grid {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(21, 94, 18);
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px; 
+}
+
+.foods-grid h2 {
+    font-size: 2em;
+    color: #44633F;
+    margin-bottom: 30px;
+}
+
+#foodh2{
+    font-size: 2em;
+    color: #44633F;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.food-card {
+    display: inline-block;
+    width: 100%;
+    margin: 2%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+    /* ADD THIS LINE */
+    cursor: pointer; 
+}
+
+.food-card:hover {
+    transform: scale(1.03);
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 15px;
+}
+
+.food-info h3 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.food-info p {
+    font-size: 0.95em;
+    color: #000000;
+}

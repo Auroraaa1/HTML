@@ -16,10 +16,12 @@ html, body {
 
 /* Header */
 header {
-    background: #3F4B3B;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
 }
 
 nav ul {
@@ -83,7 +85,7 @@ section:not(.hero) {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-section h2 {
+.foods-grid h2 {
     color: #008080;
     margin-bottom: 10px;
 }
