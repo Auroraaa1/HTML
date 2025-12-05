@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindanao Tourist Spots</title>
+    <link rel="stylesheet" href="Style-File.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Main-page.html">Home</a></li>
+                <li><a href="Main-page.html#foods">Popular Foods</a></li>
+                <li><a href="Luzon.html">Luzon</a></li>
+                <li><a href="Visayas.html">Visayas</a></li>
+                <li><a href="Mindanao.html">Mindanao</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CLASS CHANGED TO 'mainheader' for consistent styling -->
+    <section class="mainheader" style="background-image: url('Mindanao-Banner.png');">
+        <h1>Experience the Rich Diversity of Mindanao</h1>
+    </section>
+
+    <main>
+        <!-- CLASS CHANGED TO 'intro content' and color set to consistent dark green -->
+        <section id="mindanao-intro" class="intro content" style="background-color: rgb(21, 94, 18);">
+            <h2>The Land of Promise</h2>
+            <p>
+                Mindanao, the second-largest island group, is a land of incredible natural beauty, rich indigenous cultures, and towering mountains. Home to Mount Apo, the country's highest peak, Mindanao offers adventures ranging from whitewater rafting to exploring unique cultural villages and tropical beaches.
+            </p>
+        </section>
+        
+        <!-- HEADING MOVED OUTSIDE AND ASSIGNED ID 'foodh2' for consistent styling -->
+        <h2 id ="foodh2" style="text-align: center;">Must-Visit Attractions</h2>
+
+        <section id="attractions" class="attractions-grid"> 
+            
+            <div 
+                class="spot-card" 
+                onclick="window.open('https://www.google.com/search?q=Travel+guide+Mount+Apo', '_blank')" 
+            >
+                <!-- ADDED IMAGE TAG -->
+                <img src="https://images.hive.blog/768x0/https://upload.wikimedia.org/wikipedia/commons/9/91/Sunken_Cemetery%2C_Camiguin_Island.jpg" alt="Photo of Mount Apo" class="spot-img">
+                <h3>Camiguin</h3>
+                <p>Camiguin is known for White Island, hot springs, and old landmarks. The island is small, so travelers can visit many places in one day. White Island has clear water and an open sandbar. Tourists also visit waterfalls and the sunken cemetery. The island stays quiet, which suits visitors who want peaceful surroundings.
+</p>
+            </div>
+            
+            <div 
+                class="spot-card" 
+                onclick="window.open('https://www.google.com/search?q=Travel+guide+Siargao+Island', '_blank')" 
+            >
+                <!-- ADDED IMAGE TAG -->
+                <img src="https://www.thecoastalcampaign.com/wp-content/uploads/2019/12/Sugba-Lagoon-Siargao-Island-1040x675.jpg" alt="Photo of Siargao Island Cloud 9" class="spot-img">
+                <h3>Siargao Island</h3>
+                <p>Siargao is known for surfing, quiet beaches, and natural pools. Cloud 9 is the most visited surf spot. The island also has lagoons, caves, and island hopping tours. The roads are simple to follow and many visitors rent motorbikes. The slow pace of the island attracts tourists who want a relaxed trip with outdoor activities. </p>
+            </div>
+
+            <div 
+                class="spot-card" 
+                onclick="window.open('https://www.google.com/search?q=Travel+guide+Samal+Island+Davao', '_blank')" 
+            >
+                <!-- ADDED IMAGE TAG -->
+                <img src="https://tripjive.com/wp-content/uploads/2024/12/Davao-City-rich-culture-and-landmarks-696x398.jpg" alt="Photo of Samal Island beach" class="spot-img">
+                <h3>Davao City</h3>
+                <p>Camiguin is known for White Island, hot springs, and old landmarks. The island is small, so travelers can visit many places in one day. White Island has clear water and an open sandbar. Tourists also visit waterfalls and the sunken cemetery. The island stays quiet, which suits visitors who want peaceful surroundings.
+</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Best Tourist Spots in the Philippines | Designed by Paul</p>
+    </footer>
+</body>
+</html>
